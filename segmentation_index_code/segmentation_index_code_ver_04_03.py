@@ -238,8 +238,8 @@ def aligner(old_image,current_image,pos_initial_col_l,r_val_merge_cur_l,c_val_me
     rem_ar_val_merge_cur_l=ar_val_merge_cur_l[no_need_to_update_first:]
     return (rem_ar_val_merge_cur_l,rem_r_val_merge_cur_l,rem_c_val_merge_cur_l,val_cutoff_row_l,val_cutoff_col_l)
 #####################
-#sort all the files according to dpf
-base_path="/home/priyom/segmentation_index_data/"
+#base folder needs to be updated accordingly
+base_path="/home/priyom/segmentation_index_code/"
 #Specifying all the parameters of the simulation
 ####################################
 ##parameters 
