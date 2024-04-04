@@ -3,4 +3,4 @@ Uses pre-processing steps of blurring and background subtraction to detect clust
 
 Written in Python and uses scipy, scikit-image and opencv.
 
-Uses folder names to pool files. Sample data added to the folder.
+Uses folder names to collect files from which needs to be updated. Sample data added to the folder.
