@@ -244,9 +244,7 @@ def aligner(old_image,current_image,pos_initial_col_l,r_val_merge_cur_l,c_val_me
     return (rem_ar_val_merge_cur_l,rem_r_val_merge_cur_l,rem_c_val_merge_cur_l,val_cutoff_row_l,val_cutoff_col_l)
 #####################
 #sort all the files according to dpf
-#base_path="/home/priyom/postdoc/somite_notochord_interaction_paper/fig7_final_code/data_post_2_14_23/dapt_ordering/"
 base_path="/home/priyom/postdoc/somite_notochord_interaction_paper/fig7_final_code/data_post_2_14_23/wt_ordering/"
-#base_path="/home/priyom/postdoc/somite_notochord_interaction_paper/fig7_final_code/data_post_2_14_23/fss_ordering/"
 #Specifying all the parameters of the simulation
 ####################################
 ##parameters 
@@ -263,18 +261,7 @@ dapt_course="/"
 dapt_key=""
 #####################################
 #wildtype fish list
-#fish_no_list=["f1","f2","f3","f5","f6","f7","f8","f9","f11","f12"]
-#fss fish list
-#fish_no_list=["fss2","fss3","fss4","fss5","fss6","fss8","fss10"]
-#dapt fish list
-#timecourse1 
-#fish_no_list=["dapt3","dapt6","dapt11","dapt12"]
-#timecourse2
-#fish_no_list=["dapt1"]
-#timecourse3
-#fish_no_list=["dapt2","dapt8","dapt11","dapt14","dapt15"]
-#timecourse4
-fish_no_list=["dapt2"]
+fish_no_list=["f1","f2","f3","f5","f6","f7","f8","f9","f11","f12"]
 order_pre_all=[]
 order_during_all=[]
 order_post_all=[]
