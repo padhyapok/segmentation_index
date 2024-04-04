@@ -12,18 +12,13 @@ from matplotlib import image, pyplot
 from math import ceil,pi
 import numpy as np
 import re
-from scipy import signal
 import itertools
 from PIL import Image
-from scipy.signal import fftconvolve
 from scipy import ndimage
 from skimage import color
 from skimage import measure
 from skimage import restoration
 import cv2
-from skimage.filters import threshold_otsu
-from skimage.feature import peak_local_max
-from skimage.segmentation import watershed
 from os import listdir
 from os.path import isfile, join, isdir
 #functions list
@@ -244,7 +239,7 @@ def aligner(old_image,current_image,pos_initial_col_l,r_val_merge_cur_l,c_val_me
     return (rem_ar_val_merge_cur_l,rem_r_val_merge_cur_l,rem_c_val_merge_cur_l,val_cutoff_row_l,val_cutoff_col_l)
 #####################
 #sort all the files according to dpf
-base_path="/home/priyom/postdoc/somite_notochord_interaction_paper/fig7_final_code/data_post_2_14_23/wt_ordering/"
+base_path="/home/priyom/segmentation_index_code/"
 #Specifying all the parameters of the simulation
 ####################################
 ##parameters 
@@ -261,7 +256,7 @@ dapt_course="/"
 dapt_key=""
 #####################################
 #wildtype fish list
-fish_no_list=["f1","f2","f3","f5","f6","f7","f8","f9","f11","f12"]
+fish_no_list=["f3"]
 order_pre_all=[]
 order_during_all=[]
 order_post_all=[]
@@ -298,7 +293,7 @@ for fl in range(len(fish_no_list)):
     c_val_sorted_cur=[]
     old_image=[]
     #metrics for writing
-    folder_write=base_path+'write_files2/'
+    folder_write=base_path+'write_files/'
     f_time_writer=open(folder_write+fish_no_list[fl]+dapt_key+'_time.txt', 'w')
     f_mismatch_writer=open(folder_write+fish_no_list[fl]+dapt_key+"_seq_over_exp.txt","w")
     f_delta_p=open(folder_write+fish_no_list[fl]+dapt_key+"_delta_p.txt", 'w')
